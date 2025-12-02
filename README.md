@@ -88,10 +88,8 @@ Each meal recommendation consists of **3 food items**.
   "body_type": "mesomorphic",
   "goal": "maintain"
 }
-Example Response:
 
-json
-Copy code
+**Example Response:**
 {
   "Breakfast": [
     {
@@ -108,9 +106,7 @@ Copy code
   "total_calories": 2450,
   "tdee": 2550
 }
-pgsql
-Copy code
-
+```
 
 ## Dataset Requirements
 
