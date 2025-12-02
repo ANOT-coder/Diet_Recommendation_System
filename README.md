@@ -75,13 +75,12 @@ Each meal recommendation consists of **3 food items**.
 ## API Usage
 
 **Endpoint:**  
+```http
 POST /recommend
+Example Request Body:
 
-css
+json
 Copy code
-
-**Example Request Body:**
-```json
 {
   "age": 22,
   "height": 170,
@@ -90,7 +89,7 @@ Copy code
   "body_type": "mesomorphic",
   "goal": "maintain"
 }
-Example Response Structure:
+Example Response:
 
 json
 Copy code
@@ -110,72 +109,75 @@ Copy code
   "total_calories": 2450,
   "tdee": 2550
 }
-
 Installation and Running the Project
+Clone Repository
 
-    1. Clone Repository
-    bash
-    Copy code
-    git clone https://github.com/<your-username>/<repo-name>.git
-    cd <repo-name>
-    2. Create Virtual Environment
-    bash
-    Copy code
-    python -m venv env
-    3. Activate Virtual Environment
-    Windows:
+bash
+Copy code
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+Create Virtual Environment
 
-    bash
-    Copy code
-    env\Scripts\activate
-    Mac/Linux:
+bash
+Copy code
+python -m venv env
+Activate Virtual Environment
 
-    bash
-    Copy code
-    source env/bin/activate
-    4. Install Dependencies
-    bash
-    Copy code
-    pip install -r requirements.txt
-    5. Run Application
-    bash
-    Copy code
-    python app.py
-    Application runs at: http://127.0.0.1:5000
+Windows:
+
+bash
+Copy code
+env\Scripts\activate
+Mac/Linux:
+
+bash
+Copy code
+source env/bin/activate
+Install Dependencies
+
+bash
+Copy code
+pip install -r requirements.txt
+Run Application
+
+bash
+Copy code
+python app.py
+Application runs at: http://127.0.0.1:5000
 
 Dataset Requirements
+Each CSV file must contain the following columns:
 
-    Each CSV file must contain the following columns:
-
-    Column	Description
-    Food_items	Name of the food item
-    Calories	Energy (kcal)
-    Fats	Total fats
-    Proteins	Total proteins
-    Carbohydrates	Total carbohydrates
+Column	Description
+Food_items	Name of the food item
+Calories	Energy (kcal)
+Fats	Total fats
+Proteins	Total proteins
+Carbohydrates	Total carbohydrates
+Link	Image URL (optional)
 
 Datasets used:
-    
-    Diet_Dataset.csv
 
-    Breakfast_data.csv
+Diet_Dataset.csv
 
-    Lunch_data.csv
+Breakfast_data.csv
 
-    Dinner_data.csv
+Lunch_data.csv
+
+Dinner_data.csv
 
 Future Improvements
-    Add user authentication and long-term tracking.
+Add user authentication and long-term tracking.
 
-    Add weekly meal planning.
+Add weekly meal planning.
 
-    Integrate with a frontend (React/Next.js).
+Integrate with a frontend (React/Next.js).
 
-    Add dietary restrictions (vegan, vegetarian, diabetic-friendly).
+Add dietary restrictions (vegan, vegetarian, diabetic-friendly).
 
-    Store datasets and recommendations in a database.
+Store datasets and recommendations in a database.
 
-    Add micro-nutrient based recommendation model.
+Add micro-nutrient based recommendation model.
 
 Author
 Prasanna Shakya
