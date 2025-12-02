@@ -109,43 +109,9 @@ Copy code
   "total_calories": 2450,
   "tdee": 2550
 }
-Installation and Running the Project
-Clone Repository
 
-bash
-Copy code
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-Create Virtual Environment
-
-bash
-Copy code
-python -m venv env
-Activate Virtual Environment
-
-Windows:
-
-bash
-Copy code
-env\Scripts\activate
-Mac/Linux:
-
-bash
-Copy code
-source env/bin/activate
-Install Dependencies
-
-bash
-Copy code
-pip install -r requirements.txt
-Run Application
-
-bash
-Copy code
-python app.py
-Application runs at: http://127.0.0.1:5000
-
-Dataset Requirements
+**
+## Dataset Requirements
 Each CSV file must contain the following columns:
 
 Column	Description
@@ -156,7 +122,7 @@ Proteins	Total proteins
 Carbohydrates	Total carbohydrates
 Link	Image URL (optional)
 
-Datasets used:
+## Datasets used:
 
 Diet_Dataset.csv
 
@@ -166,23 +132,23 @@ Lunch_data.csv
 
 Dinner_data.csv
 
-Future Improvements
-Add user authentication and long-term tracking.
+## Future Improvements
+    Add user authentication and long-term tracking.
 
-Add weekly meal planning.
+    Add weekly meal planning.
 
-Integrate with a frontend (React/Next.js).
+    Integrate with a frontend (React/Next.js).
 
-Add dietary restrictions (vegan, vegetarian, diabetic-friendly).
+    Add dietary restrictions (vegan, vegetarian, diabetic-friendly).
 
-Store datasets and recommendations in a database.
+    Store datasets and recommendations in a database.
 
-Add micro-nutrient based recommendation model.
+    Add micro-nutrient based recommendation model.
 
-Author
-Prasanna Shakya
-Email: 0431ps@gmail.com
-GitHub: https://github.com/ANOT-coder
+## Author
+    Prasanna Shakya
+    Email: 0431ps@gmail.com
+    GitHub: https://github.com/ANOT-coder
 
-License
-This project is available under the MIT License.
+#License
+    This project is available under the MIT License.
